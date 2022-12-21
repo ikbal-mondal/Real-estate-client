@@ -4,6 +4,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main/Main';
 import Home from './Components/Home/Home';
+import DetailsShow from './Components/Home/category/DetailsShow';
 
 function App() {
  
@@ -19,7 +20,13 @@ function App() {
         {
           path:'/Home',
           element:<Home></Home>
-        }
+        },
+        {
+          path:'/propertiesDetails/:id',
+          element:<DetailsShow></DetailsShow>,
+          loader:({params}) => fetch(`http://localhost:5000/propertiesDetails/${params.id}`)
+        },
+        
       ]
     }
   ])

@@ -3,13 +3,14 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import BannerSlider from './BannerSlider/BannerSlider';
 import CategoryProduct from './category/CategoryProduct';
+import ContactUs from './ContactUs/ContactUs';
 
 const Home = () => {
 
     const [data ,setData] = useState()
    
     useEffect(()=>{
-         fetch('Data/realestate-category.json')
+         fetch('http://localhost:5000/properties')
          .then(res => res.json())
          .then(data => setData(data))
     },[])
@@ -23,11 +24,12 @@ const Home = () => {
 
         {
          data?.map(property => <CategoryProduct
-          key={property.category}
+          key={property._id}
           property={property}
           ></CategoryProduct>)  
         }
     </div>
+     <ContactUs></ContactUs>
        </div>
     );
 };
