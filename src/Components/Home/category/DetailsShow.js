@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const DetailsShow = () => {
     const data = useLoaderData()
@@ -23,7 +23,10 @@ const DetailsShow = () => {
 		<img style={{height:'500px'}} src={url} alt="" className="w-full  bg-gray-100" />
 		<div className="mx-auto">
         <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-5xl   sm:px-10 sm:mx-12 lg:rounded-md bg-gray-100">
+        <div className="flex justify-between items-center">
         <span className='bg-green-300 px-2 rounded  text-green-600'>sale</span>
+        <Link to='/' className='bg-red-300 rounded text-red-600 px-3 py-1 font-bold'><i class="fa-solid fa-left-long"></i> Back</Link>
+        </div>
 			<div className="">
             
 				<h2 className="inline-block space-y-2 text-2xl font-semibold sm:text-4xl">{name}</h2>

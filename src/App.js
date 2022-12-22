@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main/Main';
 import Home from './Components/Home/Home';
 import DetailsShow from './Components/Home/category/DetailsShow';
+import Login from './Components/UserAuth/Login/Login';
+import Signup from './Components/UserAuth/Signup/Signup';
 
 function App() {
  
@@ -20,6 +22,14 @@ function App() {
         {
           path:'/Home',
           element:<Home></Home>
+        },
+        {
+          path:'/login',
+          element:<Login></Login>
+        },
+        {
+          path:'/signup',
+          element:<Signup></Signup>
         },
         {
           path:'/propertiesDetails/:id',
