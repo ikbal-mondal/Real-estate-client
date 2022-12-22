@@ -1,23 +1,16 @@
-/* .custom-style:hover{
+.card-style:hover {
 
-    transition: transform .6s;
-    transform: scale(1.2);
-    opacity: 0.6;
-    cursor: pointer;  
-} */
-
-.card-style:hover{
-
-    background-color:#4faee238;
+    background-color: #4faee238;
     box-shadow: 5px 4px 11px #646464;
     border-radius: 4px;
-   
+
 }
-.card-style:hover .custom-style{
+
+.card-style:hover .custom-style {
 
     transition: transform .9s;
     transform: scale(1.2);
     opacity: 0.6;
-    cursor: pointer; 
+    cursor: pointer;
    
 }
