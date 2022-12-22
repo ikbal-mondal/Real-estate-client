@@ -10,7 +10,7 @@ const Home = () => {
     const [data ,setData] = useState()
    
     useEffect(()=>{
-         fetch('http://localhost:5000/properties')
+         fetch('https://real-estate-server-phi.vercel.app/properties')
          .then(res => res.json())
          .then(data => setData(data))
     },[])
@@ -19,7 +19,9 @@ const Home = () => {
     return (
        <div className="">
         <BannerSlider></BannerSlider>
-         <div className='grid lg:grid-cols-3 gap-8 my-16 container mx-auto'>
+         <div className="mx-6">
+          
+         <div className='grid lg:grid-cols-3 gap-8 mb-16 mt-8  container mx-auto'>
         
 
         {
@@ -29,6 +31,7 @@ const Home = () => {
           ></CategoryProduct>)  
         }
     </div>
+         </div>
      <ContactUs></ContactUs>
        </div>
     );

@@ -34,7 +34,7 @@ function App() {
         {
           path:'/propertiesDetails/:id',
           element:<DetailsShow></DetailsShow>,
-          loader:({params}) => fetch(`http://localhost:5000/propertiesDetails/${params.id}`)
+          loader:({params}) => fetch(`https://real-estate-server-phi.vercel.app/propertiesDetails/${params.id}`)
         },
         
       ]

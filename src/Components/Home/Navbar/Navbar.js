@@ -24,6 +24,8 @@ const Navbar = () => {
                     title="Home"
                     class="font-medium text-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                   >
+                    <i class="fa-solid fa-house-user"></i>
+
                   Home
                   </Link>
                 </li>
@@ -40,6 +42,16 @@ const Navbar = () => {
                   
                 >
                 <button className="btn btn-outline px-8 btn-success">Login</button>  
+                </Link>
+              </li>
+              <li>
+                <Link
+                to=''
+                  aria-label="Profile"
+                  title="Profile"
+                  
+                >
+               <img className='w-12 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshW2NpetcJKgpq6jaRpnFR2uxuGAXWEN8KQ&usqp=CAU" alt="" />  
                 </Link>
               </li>
              
@@ -105,6 +117,8 @@ const Navbar = () => {
                             title="Home"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
+                            <i class="fa-solid fa-house-user"></i>
+
                            Home
                           </Link>
                         </li>

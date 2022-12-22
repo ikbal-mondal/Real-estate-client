@@ -35,7 +35,7 @@ const Signup = () => {
 
                  </div>
                
-                 <input className='btn bg-gradient-to-r from-primary to-secondary border-0 w-full ' value="Sign Up" type="submit" />
+                 <input className='btn bg-gradient-to-r from-lime-500 to-teal-300 border-0 w-full ' value="Sign Up" type="submit" />
                  <p className=" text-base mt-1 font-light text-start text-gray-600">Already have an account <Link to='/login' className="font-medium text-primary dark:text-gray-200 hover:underline"> Please Login Now </Link></p>
                  <div className="flex items-center justify-between mt-2">
                 
